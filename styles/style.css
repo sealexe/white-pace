@@ -1,0 +1,71 @@
+.header {
+  padding: 16px 94px 16px 32px;
+  background-color: #043873;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header__logo {
+  display: block;
+  text-decoration: none;
+  width: 191px;
+  height: 34px;
+}
+
+.header__logo-image {
+  height: 100%;
+}
+
+.header__menu {
+  display: flex;
+  gap: 24px;
+}
+
+.header__login-button {
+  width: 126px;
+  height: 60px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffe492;
+  color: #043873;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 128%;
+  letter-spacing: -0.02em;
+  padding: 16px 40px;
+}
+
+.header__try-button {
+  min-width: 227px;
+  height: 60px;
+  padding: 16px 24px;
+  border: none;
+  background-color: #4f9cf9;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 128%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.header__try-button::after {
+  content: url(../images/arrow.svg);
+  margin-inline-start: 10px;
+  width: 10px;
+  height: 10px;
+}
+
+.header::after {
+  content: url(../images/Hum-menu.svg);
+  width: 42px;
+  height: 24px;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+}
+
