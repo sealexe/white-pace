@@ -8,3 +8,14 @@
     font-display: swap;
     font-weight: 400 500 600 700;
   }
+
+  @font-face {
+    font-family: DM-Sans;
+    src:
+      local('DM-Sans'),
+      url(./DM_Sans.woff2)
+      format('woff2 supports variations'),
+      url(./DM_Sans.woff2) format('woff2-variations');
+    font-display: swap;
+    font-weight: 500;
+  } 

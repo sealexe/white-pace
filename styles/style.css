@@ -1,10 +1,10 @@
 .header {
-  padding: 16px 94px 16px 32px;
+  padding: 16px 32px;
   background-color: #043873;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
   position: relative;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
 }
 
 .header__logo {
@@ -18,12 +18,45 @@
   height: 100%;
 }
 
-.header__menu {
+.header__menu-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 75.5px;
+  justify-self: end;
+  align-items: center;
+} 
+
+.header__menu-list {
+  display: flex;
+  gap: 32px;
+  list-style-type: none;
+}
+
+.header__menu-list-link {
+  display: inline-block;
+  font-family: DM-Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 128%;
+  color: #fff;
+}
+
+.header__menu-list-link::after {
+  content: url(../images/menu_arrow.svg);
+  width: 9px;
+  height: 4px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: -4px;
+}
+
+.header__menu-buttons {
   display: flex;
   gap: 24px;
 }
 
-.header__login-button {
+.header__menu-login-button {
   width: 126px;
   height: 60px;
   border: none;
@@ -38,7 +71,7 @@
   padding: 16px 40px;
 }
 
-.header__try-button {
+.header__menu-try-button {
   min-width: 227px;
   height: 60px;
   padding: 16px 24px;
@@ -53,19 +86,12 @@
   color: #fff;
 }
 
-.header__try-button::after {
+.header__menu-try-button::after {
   content: url(../images/arrow.svg);
   margin-inline-start: 10px;
   width: 10px;
   height: 10px;
 }
 
-.header::after {
-  content: url(../images/Hum-menu.svg);
-  width: 42px;
-  height: 24px;
-  position: absolute;
-  right: 32px;
-  top: 32px;
-}
+
 
