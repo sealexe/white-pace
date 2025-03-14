@@ -59,6 +59,24 @@
   border: none;
 }
 
+.button-decor {
+  background-color: #4f9cf9;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.button-decor::after {
+  content: url(../images/arrow.svg);
+  margin-inline-start: 10px;
+  width: 10px;
+  height: 10px;
+}
+
 .header__menu-buttons {
   display: flex;
   gap: 24px;
@@ -92,13 +110,6 @@
   line-height: 128%;
   letter-spacing: -0.02em;
   color: #fff;
-}
-
-.header__menu-try-button::after {
-  content: url(../images/arrow.svg);
-  margin-inline-start: 10px;
-  width: 10px;
-  height: 10px;
 }
 
 .cover {
@@ -164,11 +175,128 @@
   border-radius: 8px;
 }
 
-.cover__try-button::after {
-  content: url(../images/arrow.svg);
-  margin-inline-start: 10px;
-  width: 10px;
-  height: 10px;
+
+.preferences {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 140px 32px;
+  gap: 100px;
 }
 
+.preferences__card-management {
+  display: grid;
+  grid-template-columns: 1fr 719px;
+}
 
+.preferences__card-management-description {
+  align-self: center;
+}
+
+.preferences__card-management-description-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #212529;
+  position: relative;
+  z-index: 0;
+}
+
+/* .preferences__card-management-description-title::after {
+  content: url(../images/underline.svg);
+  width: 484.21px;
+  height: 36.75px;
+  display: block;
+  rotate: 0.15deg;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 18px;
+} */
+
+.preferences__card-management-description-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  color: #212529;
+  margin-block-start: 24px;
+}
+
+.preferences__card-management-description-button {
+  width: 201px;
+  height: 63px;
+  margin-block-start: 60px;
+}
+
+.preferences__card-image-workpiece {
+  height: 448px;
+  background-color: #a7cefc;
+}
+
+.preferences__card-work {
+  display: grid;
+  grid-template-columns: 583px 1fr;
+  gap: 160px;
+}
+
+.preferences__card-work-image-container {
+  height: 542.76px;
+}
+
+.preferences__card-work-image {
+  height: 100%;
+}
+
+.preferences__card-work-description {
+  align-self: center;
+}
+
+.preferences__card-work-description-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #212529;
+}
+
+.title-decor {
+  display: inline-block;
+  position: relative;
+}
+
+.title-decor::after {
+  content: '';
+  rotate: 0.15deg;
+  position: absolute;
+  background-image: url(../images/underline.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 100%;
+  display: block;
+  height: 25.55px;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+}
+
+.preferences__card-work-description-text {
+  margin-block-start: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  color: #212529;
+}
+
+.preferences__card-work-button {
+  min-width: 186px;
+  min-height: 63px;
+  margin-block-start: 60px;
+}
