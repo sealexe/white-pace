@@ -175,6 +175,33 @@
   border-radius: 8px;
 }
 
+.section-bright {
+  background-color: #fff;
+  color: #212529;
+}
+
+.section-dark {
+  background-color: #043873;
+  color: #fff;
+}
+
+.section__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 0;
+}
+
+.card-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+}
 
 .preferences {
   display: flex;
@@ -193,36 +220,7 @@
   align-self: center;
 }
 
-.preferences__card-management-description-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-  color: #212529;
-  position: relative;
-  z-index: 0;
-}
-
-/* .preferences__card-management-description-title::after {
-  content: url(../images/underline.svg);
-  width: 484.21px;
-  height: 36.75px;
-  display: block;
-  rotate: 0.15deg;
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  bottom: 18px;
-} */
-
 .preferences__card-management-description-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.7;
-  letter-spacing: -0.01em;
-  color: #212529;
   margin-block-start: 24px;
 }
 
@@ -255,15 +253,6 @@
   align-self: center;
 }
 
-.preferences__card-work-description-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-  color: #212529;
-}
-
 .title-decor {
   display: inline-block;
   position: relative;
@@ -287,16 +276,52 @@
 
 .preferences__card-work-description-text {
   margin-block-start: 24px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.7;
-  letter-spacing: -0.01em;
-  color: #212529;
 }
 
 .preferences__card-work-button {
   min-width: 186px;
   min-height: 63px;
   margin-block-start: 60px;
+}
+
+.extension {
+  padding: 140px 32px;
+  display: grid;
+  grid-template-columns: 1fr 686px;
+  gap: 98px;
+}
+
+.extension__container {
+  margin: 49px 0;
+}
+
+.extension__description-container {
+  margin-block-start: 24px;
+}
+
+.extension__button {
+  margin-block-start: 60px;
+  inline-size: 176px;
+  block-size: 63px;
+}
+
+.customise {
+  padding: 140px 32px;
+  display: grid;
+  grid-template-columns: 670px 1fr;
+  gap: 60px;
+}
+
+.customise__container {
+  margin: 46.15px 0;
+}
+
+.customise__description-container {
+  margin-block-start: 24px;
+}
+
+.customise__button {
+  margin-block-start: 60px;
+  inline-size: 164px;
+  block-size: 59px;
 }
